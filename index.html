@@ -1,0 +1,191 @@
+---
+import { useState } from 'react'
+---
+
+<astro-document>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home">
+      <div class="overlay">
+        <h1>Transforming Cross-Border Payments</h1>
+        <p>FinEdge - Seamlessly connect the world through effortless transactions.</p>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container">
+        <h2>About Us</h2>
+        <p>FinEdge is a cutting-edge fintech startup focused on transforming cross-border payments. 
+        We believe in a world where geographic boundaries should not limit individuals and businesses from making seamless transactions. </p>
+      </div>
+    </section>
+
+    <section id="services">
+      <div class="container">
+        <h2>Our Services</h2>
+        <div class="service">
+          <img src="/public/images/money-transfer.png" alt="Money Transfer"  >
+          <h3>Individual Money Transfers</h3>&nbsp;&nbsp;&nbsp
+          <p>   Fast and secure money transfers for individuals worldwide.  </p>
+        </div>
+        <div class="service">
+          <img src="/public/images/business-payments.png" alt="1-Business Payments" >
+          <h3>Business Payments</h3>&nbsp;&nbsp;&nbsp
+          <p>   Efficient payment solutions for businesses of all sizes.  </p>
+        </div>
+        <div class="service">
+          <img src="/public/images/payment-tracking.png" alt="Payment Tracking" >
+          <h3>Real-Time Payment Tracking</h3>&nbsp;&nbsp;&nbsp
+          <p>   Track your payments in real-time for better control and transparency.  </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <h2>Contact Us</h2>
+        <form>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 FinEdge. All rights reserved.</p>
+  </footer>
+</astro-document>
+
+<style>
+  /* General Styles */
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  /* Navigation Bar */
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+  }
+
+  nav ul li {
+    margin: 0 10px;
+  }
+
+  /* Home Section */
+  #home {
+  background-image: url('/public/images/background-image.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+
+  #home .overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    text-align: center;
+  }
+
+  /* About Us Section */
+  #about {
+    padding: 40px;
+  }
+
+  /* Services Section */
+  #services {
+    padding: 40px;
+  }
+
+  .service {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .service img {
+    width: 50px;
+    margin-right: 10px;
+  }
+
+  /* Contact Us Section */
+  #contact {
+    padding: 40px;
+  }
+
+  .form-group {
+    margin-bottom: 20px;
+  }
+
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+
+  button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: #0069d9;
+  }
+
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    #home h1 {
+      font-size: 28px;
+    }
+
+    #home p {
+      font-size: 16px;
+    }
+
+    .service img {
+      width: 40px;
+      margin-right: 5px;
+    }
+  }
+</style>
